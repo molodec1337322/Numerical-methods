@@ -1,5 +1,6 @@
 import math
 
+
 def math_function(x):
 
     return 2 * x + math.log(10, x) - 7
@@ -27,12 +28,12 @@ def newton(a, b, accuracy, math_function, first_derivative, second_derivative):
 
     while current_accuracy >= accuracy:
         iterations_count += 1
+        print(iterations_count, "  ", X)
         previous_result = X
-        X = X - math_function(X) / first_derivative(X)
+        X = X - (math_function(X) / first_derivative(X))
         current_accuracy = math.fabs(X - previous_result)
 
     return X, iterations_count
-
 
 
 def main():
