@@ -3,17 +3,17 @@ import math
 
 def math_function(x):
 
-    return 2 * x + math.log(10, x) - 7
+    return 2 * x - math.log10(x) - 7
 
 
 def first_derivative(x):
 
-    return 2 - 1 / (x * math.log(math.exp(1), 10))
+    return 2 - 1/(x * math.log(10))
 
 
 def second_derivative(x):
 
-    return 1 / (x * x * math.log(math.exp(1), 10))
+    return 1/(x * x * math.log(10))
 
 
 def newton(a, b, accuracy, math_function, first_derivative, second_derivative):
