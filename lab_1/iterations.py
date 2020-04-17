@@ -11,7 +11,7 @@ def x_function(x):
 	return (math.log10(x) + 7) / 2
 
 
-def newton(a, b, accuracy, math_function, x_function):
+def iterations(a, b, accuracy, math_function, x_function):
 
 	iterations_count = 0
 	current_accuracy = math.fabs(a - b)
