@@ -3,7 +3,7 @@ import math
 
 def math_function(x):
 
-    return 2 * x - math.log(10, x) - 7
+    return 2 * x - math.log10(x) - 7
 
 
 def dihtomia(a, b, accuracy, math_function):
