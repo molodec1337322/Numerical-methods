@@ -11,7 +11,7 @@ def x_function(x):
 	return (math.log10(x) + 7) / 2
 
 
-def iterations(a, b, accuracy, math_function, x_function):
+def e_iterations(a, b, accuracy, math_function, x_function):
 
 	iterations_count = 0
 	current_accuracy = math.fabs(a - b)
@@ -36,7 +36,7 @@ def main():
 	print("Введите необходимую точность")
 	accuracy = float(input())
 
-	result, iterations = newton(a, b, accuracy, math_function, x_function)
+	result, iterations = e_iterations(a, b, accuracy, math_function, x_function)
 
 	print("Ответ: ", result)
 	print("Кол-во итреций: ", iterations)
