@@ -19,6 +19,7 @@ def iterations(a, b, accuracy, math_function, x_function):
 	X = x_function(X)
 
 	while current_accuracy >= accuracy:
+		iterations_count += 1
 		previous_result = X
 		X = x_function(X)
 		current_accuracy = math.fabs(X - previous_result)
