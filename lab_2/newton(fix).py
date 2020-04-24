@@ -3,7 +3,7 @@ import math
 
 def kramer(x, y):
 
-    main_determinant = math.sin(x - 2) * math.cos(y + 0.5) - 1
+    main_determinant = math.sin(y - 0.5) * math.cos(x) - 2
 
     first_determinant = -math.sin(y + 0.5) + x + 1 + math.cos(y + 0.5) * math.cos(x - 2) + y * math.cos(y + 0.5)
 
