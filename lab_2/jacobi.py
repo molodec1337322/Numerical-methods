@@ -31,11 +31,11 @@ def main():
     print("Введите точность: ")
     accuracy = float(input())
 
-    x, y, it_count = jacobi(accuracy)
+    x, y, iterations = jacobi(accuracy)
 
     print("x: ", x)
     print("y: ", y)
-    print("Кол-во итераций: ", it_count)
+    print("Кол-во итераций: ", iterations)
 
 
 if __name__ == '__main__':
