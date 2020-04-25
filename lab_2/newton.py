@@ -42,11 +42,11 @@ def main():
     print("Введите точность: ")
     accuracy = float(input())
 
-    x, y, it_count = newton(accuracy)
+    x, y, iterations = newton(accuracy)
 
     print("x: ", x)
     print("y: ", y)
-    print("Кол-во итераций: ", it_count)
+    print("Кол-во итераций: ", iterations)
 
 
 if __name__ == '__main__':
