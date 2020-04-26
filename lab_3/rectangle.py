@@ -3,7 +3,7 @@ import math
 
 def math_function(x):
 
-    return math.sin(math.log(math.exp(1), x))
+    return math.sin(math.log(x))
 
 
 def rectangle(start, end, step, math_func):
@@ -22,9 +22,11 @@ def rectangle(start, end, step, math_func):
 
 def main():
 
-    area, iterations = rectangle(2, 10, 0.0001, math_function)
+    true_area = 7.19118686078937
+    area, iterations = rectangle(2, 10, 0.001, math_function)
     print("Площадь: ", area, " \nКол-во итраций: ", iterations)
+    print("Отклонение: ", abs(true_area - area))
 
-
+    
 if __name__ == "__main__":
     main()
