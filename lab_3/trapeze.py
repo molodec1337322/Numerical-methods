@@ -12,7 +12,7 @@ def trapeze(start, end, step, math_func):
     sum = 0
     x = start
 
-    while x <= end:
+    while x + step < end:
         iterations += 1
         sum += step * abs(math_func(x) + math_func(x + step)) / 2
         x += step
